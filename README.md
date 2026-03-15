@@ -2,6 +2,16 @@
 
 A lightweight Jira-style project management system with multi-project support, sprints, epics, real-time updates, and role-based access control.
 
+## Live Demo
+
+| Service  | URL                                              |
+| -------- | ------------------------------------------------ |
+| Frontend | https://kanban-rose-pi.vercel.app                |
+| Backend  | https://kanban-6125.onrender.com                 |
+| Database | PostgreSQL on [Neon](https://neon.tech)           |
+
+> **Note:** The backend runs on Render's free tier and spins down after inactivity. The first request may take up to a minute while it cold-starts.
+
 ## Tech Stack
 
 | Layer          | Technology                          |
