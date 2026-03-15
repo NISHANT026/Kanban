@@ -19,7 +19,8 @@ export function useSocket(projectId: string | undefined) {
     if (!projectId) return;
 
     const token = localStorage.getItem("token");
-    const socket: TypedSocket = io({
+    const socketUrl = import.meta.env.VITE_SOCKET_URL || undefined;
+    const socket: TypedSocket = io(socketUrl, {
       transports: ["websocket", "polling"],
       auth: { token },
     });
